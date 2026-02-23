@@ -73,6 +73,9 @@ class Teacher implements IPerson {
 
     @Override
     public boolean can(String action) {
+        if(action.equals(School.VIEW_COURSES) || action.equals(School.GRADE_STUDENT)  || action.equals(School.VIEW_ALL_GRADES) || action.equals(School.UPDATE_ATTENDANCE)) {
+            return true;
+        }
         return false;
     }
 
@@ -95,5 +98,4 @@ class Teacher implements IPerson {
     public String getUserName() {
         return teacherName;
     }
-    
 }

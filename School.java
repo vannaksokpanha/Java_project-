@@ -8,6 +8,18 @@ class School {
     private int teacherCount;
     private int transcriptCount;
     private static int totalBranch = 0;
+
+    public static final String VIEW_COURSES = "VIEW_COURSES";
+    public static final String CREATE_COURSE = "CREATE_COURSE";
+    public static final String UPDATE_COURSE = "UPDATE_COURSE";
+    public static final String DELETE_COURSE = "DELETE_COURSE";
+    public static final String GRADE_STUDENT = "GRADE_STUDENT";
+    public static final String VIEW_OWN_GRADES = "VIEW_OWN_GRADES";
+    public static final String VIEW_ALL_GRADES = "VIEW_ALL_GRADES";
+    public static final String CREATE_USER = "CREATE_USER";
+    public static final String VIEW_USERS = "VIEW_USERS";
+    public static final String UPDATE_ATTENDANCE = "UPDATE_ATTENDANCE";
+    public static final String VIEW_TRANSCRIPT = "VIEW_TRANSCRIPT";
     
     public School(int capacity) {
         this.students = new Student[capacity];
