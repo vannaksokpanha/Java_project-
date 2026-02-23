@@ -1,4 +1,4 @@
-class Teacher {
+class Teacher implements IPerson {
     private String teacherName;
     private String teacherId;
     private String department;
@@ -70,4 +70,30 @@ class Teacher {
     public String toString() {
         return teacherName + " (" + teacherId + ", " + department + ")";
     }
+
+    @Override
+    public boolean can(String action) {
+        return false;
+    }
+
+    @Override
+    public String getId() {
+        return teacherId;
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String getRole() {
+        return "TEACHER";
+    }
+
+    @Override
+    public String getUserName() {
+        return teacherName;
+    }
+    
 }
