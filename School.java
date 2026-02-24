@@ -16,10 +16,16 @@ class School {
     public static final String GRADE_STUDENT = "GRADE_STUDENT";
     public static final String VIEW_OWN_GRADES = "VIEW_OWN_GRADES";
     public static final String VIEW_ALL_GRADES = "VIEW_ALL_GRADES";
+    public static final String UPDATE_SCORES = "UPDATE_SCORES";
+    public static final String VIEW_TRANSCRIPT = "VIEW_TRANSCRIPT";
+    public static final String VIEW_OWN_TRANSCRIPT = "VIEW_OWN_TRANSCRIPT";
     public static final String CREATE_USER = "CREATE_USER";
     public static final String VIEW_USERS = "VIEW_USERS";
+    public static final String UPDATE_USER = "UPDATE_USER";
+    public static final String DELETE_USER = "DELETE_USER";
     public static final String UPDATE_ATTENDANCE = "UPDATE_ATTENDANCE";
-    public static final String VIEW_TRANSCRIPT = "VIEW_TRANSCRIPT";
+    public static final String VIEW_ATTENDANCE = "VIEW_ATTENDANCE";
+    public static final String VIEW_OWN_ATTENDANCE = "VIEW_OWN_ATTENDANCE";
     
     public School(int capacity) {
         this.students = new Student[capacity];
